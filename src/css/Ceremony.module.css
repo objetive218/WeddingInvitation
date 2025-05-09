@@ -1,0 +1,855 @@
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: local('Montserrat-Medium'), url(/fonts/Montserrat-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: local('Montserrat-Regular'), url(/fonts/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat-LightItalic';
+    src: local('Montserrat-LightItalic'), url(/fonts/Montserrat-LightItalic.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'BODAR';
+    src: local('BODAR'), url(/fonts/BODAR.ttf) format('truetype');
+}
+
+.disaper {
+    display: none !important;
+}
+
+.main {
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.main .title {
+    font-family: "BODAR";
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    font-size: 30px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main .title span {
+    font-size: 15px;
+}
+
+.main h3 {
+    font-family: "BODAR";
+}
+
+.main .logoBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .line {
+    border-top: 1px solid #081330;
+    width: 130px;
+}
+
+.main .date {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    font-family: "BODAR";
+    font-weight: 100;
+}
+
+.divLine {
+    border-left: 1px solid black;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+}
+
+.main .date h2 {
+    padding-right: 50px;
+    font-size: 30px;
+    font-weight: 100;
+    padding-left: 28px;
+}
+
+
+
+/*boxDate*/
+.main .date .boxDate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.main .date .boxDate h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.main .date .boxDate h3 span {
+    font-size: 15px;
+}
+
+.main .date h5 {
+    padding-right: 60px;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.main .title2 {
+    font-family: "BODAR";
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+/*location*/
+.main .location {
+    font-family: "Montserrat-Medium";
+    font-weight: 600;
+}
+
+.main .imglocation {
+    width: 20px;
+}
+
+.main .btnUbi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    background-color: rgba(119, 136, 153, 0.4);
+    border-radius: 10px;
+}
+
+.main .btnUbi a {
+    color: #081330;
+    font-family: "Montserrat-Medium";
+    font-weight: 600;
+}
+
+/*Confirmation */
+.main .formConfirm {
+    width: 200px;
+    height: 40px;
+}
+
+.main .formConfirm button {
+    font-family: "Montserrat-Medium";
+    font-size: 17px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgba(119, 136, 153, 0.4);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.main .textConf {
+    font-family: "Montserrat-Regular";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.main .lastDate {
+    font-family: "Montserrat-LightItalic";
+    font-style: italic;
+}
+
+/*form confirmation */
+.main .formToggle {
+    font-family: "Montserrat-Medium";
+    font-weight: 600;
+    font-size: 31px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    position: absolute;
+    background: center/cover no-repeat url(/img/Confirmacion-invitados.jpg);
+    opacity: 1;
+    width: 45%;
+    height: 80%;
+    border-radius: 15px;
+    top: 10%;
+    border: #081330 solid 2px;
+    z-index: 1;
+    padding-top: 10px;
+}
+
+/*
+.main .formToggletTwo {
+    font-family: "Montserrat-Medium";
+    font-weight: 600;
+    font-size: 31px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 15px;
+    position: absolute;
+    background: center/cover no-repeat url(/img/Confirmacion-invitados.jpg);
+    opacity: 1;
+    width: 45%;
+    height: 80%;
+    border-radius: 15px;
+    top: 10%;
+    border: #081330 solid 2px;
+    z-index: 1;
+    padding-top: 10px;
+}
+*/
+.active_blur {
+    filter: blur(1px);
+}
+
+/*paragraph*/
+.main .formToggle p {
+    font-family: "Montserrat-LightItalic";
+    font-style: italic;
+    font-size: 16px;
+    text-wrap: wrap;
+    padding: 0px 15px;
+}
+
+/*btn*/
+.main .formToggle .btnSend {
+    width: 110px;
+    height: 40px;
+    padding: 10px;
+    font-size: 56%;
+    border-radius: 20px;
+    background-color: rgba(8, 19, 48, 1);
+    font-family: "Montserrat-Medium";
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: white;
+    align-self: center;
+    margin-top: 3px;
+}
+
+/*form data */
+.main .formToggle .imgDate {
+    align-self: center;
+    padding-bottom: 15px;
+    width: 20%;
+}
+
+.main .formToggle h3 {
+    padding: 40px 0px;
+}
+
+/*
+.main .formToggle button{
+    width: 110px;
+    height: 40px;
+    align-self: center;
+    font-family: "Montserrat-LightItalic";
+    font-size:17px;
+    background-color: #081330;
+}
+*/
+
+.main .formToggle section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 32%;
+    gap: 15px;
+}
+
+.main .formToggle div>button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+}
+
+.main .formToggle div>button img {
+    width: 50px;
+    cursor: pointer !important;
+
+}
+
+.main .formToggle section div>h4 {
+    flex: 3;
+    font-size: 20px;
+}
+
+.main .formToggle section>div {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 10px;
+    border: #081330 1px solid;
+    border-radius: 25px;
+    margin: 0px 0px;
+    padding: 10px;
+    width: 90%;
+    height: 5%;
+    align-items: center;
+    align-self: center;
+}
+
+.main .formToggle section>div h4 {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10%;
+}
+
+.main .formToggle .oneInvition {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main .formToggle .oneInvition div {
+    width: 80%;
+    padding: 0px;
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .formToggle .oneInvition div h4 {
+    flex: 1;
+    font-size: 20px;
+}
+
+/*input toggle*/
+.main .formToggle div .boxToggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 30px;
+}
+
+.main .formToggle div .boxToggle .checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.main .formToggle div .boxToggle .slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: lightcoral;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.main .formToggle div .boxToggle .slider::before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.main .formToggle div .boxToggle .checkbox:checked+.slider {
+    background-color: lightgreen;
+}
+
+.main .formToggle div .boxToggle .checkbox:checked+.slider::before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.active {
+    display: none !important;
+}
+
+/*dress code section*/
+.main .dress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0px;
+}
+
+.main .dress h2 {
+    font-family: "BODAR";
+    font-size: 28px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+.main .dress h2 span {
+    font-size: 15px;
+}
+
+.main .dress .code {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.main .dress .code .men {
+    padding-right: 40px;
+    align-self: center;
+    width: 200px;
+}
+
+.main .dress .code .men h3 {
+    padding-left: 38%;
+    font-family: "Montserrat-Medium";
+    font-size: 23px;
+}
+
+.main .dress .code .men h4 {
+    padding-left: 28%;
+    font-family: "Montserrat-LightItalic";
+    font-weight: 600;
+    font-size: 22px;
+    white-space: nowrap;
+}
+
+.main .dress .code .men p {
+    padding-left: 39%;
+    font-family: "Montserrat-LightItalic";
+    font-style: italic;
+    font-size: 15px;
+}
+
+.main .dress .code .women {
+    padding-right: 20px;
+    width: 200px;
+}
+
+.main .dress .code .women h3 {
+    font-family: "Montserrat-Medium";
+    font-size: 23px;
+}
+
+.main .dress .code .women h4 {
+    font-family: "Montserrat-LightItalic";
+    font-weight: 600;
+    font-size: 22px;
+    white-space: nowrap;
+}
+
+.main .dress .code .women p {
+    font-family: "Montserrat-LightItalic";
+    font-style: italic;
+    font-size: 15px;
+}
+
+.main .dress .code div {
+    width: 200px;
+}
+
+.main .dress .code div h3 {
+    min-width: 100px;
+}
+
+/*media height*/
+@media(min-height: 1081px) {
+    .main {
+        gap: 40px !important;
+    }
+}
+
+@media (max-height: 720px) {
+    .main {
+        gap: 0 !important;
+    }
+
+    .main .textConf {
+        padding: 0px !important;
+    }
+
+    .main .dress h2 {
+        padding-bottom: 0px !important;
+    }
+}
+
+@media(max-height: 400px) {
+    .main .title {
+        font-size: 20px !important;
+    }
+
+    .main .date {
+        gap: 10px !important;
+        padding-bottom: 0;
+    }
+
+    .main .date h2 {
+        font-size: 22px !important;
+        padding-bottom: 0;
+    }
+
+    .main .date .boxDate h3 {
+        font-size: 22px !important;
+    }
+
+    .main .date h5 {
+        font-size: 22px !important;
+    }
+
+    .main .title2 {
+        font-size: 20px;
+    }
+
+    .main .btnUbi {
+        width: 140px;
+        height: 30px;
+    }
+
+    .main .formConfirm button {
+        font-size: 15px;
+        width: 180px;
+        height: 28px;
+    }
+
+    .main .textConf {
+        font-size: 14px;
+        line-height: 13px;
+    }
+
+    .main .lastDate {
+        font-size: 13px;
+    }
+
+    .main .dress h2 {
+        font-size: 20px !important;
+    }
+
+    .main .dress .code .men h3 {
+        font-size: 18px;
+    }
+
+    .main .dress .code .men h4 {
+        font-size: 18px;
+    }
+
+    .main .dress .code .women h3 {
+        font-size: 18px;
+    }
+
+    .main .dress .code .women h4 {
+        font-size: 18px;
+    }
+}
+
+/*media width*/
+@media (max-width: 1440px) {
+    .main .formToggle {
+        gap: 5px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .main {
+        gap: 40px;
+        justify-content: flex-start;
+        height: fit-content;
+        padding-top: 0px;
+    }
+
+    .main .title {
+        letter-spacing: 2px;
+        font-size: 27px;
+        padding-bottom: 0px;
+    }
+
+    .main .line {
+        width: 100px;
+    }
+
+    .main .date {
+        gap: 10px;
+    }
+
+    .main .date h2 {
+        padding-right: 50px;
+        font-size: 27px;
+        padding-left: 30px;
+    }
+
+    /*boxDate*/
+    .main .date .boxDate {
+        gap: 0px;
+    }
+
+    .main .date h5 {
+        padding-right: 32px;
+        font-size: 28px;
+    }
+
+    /*location*/
+
+    .main .btnUbi {
+        padding: 10px;
+    }
+
+    .main .textConf {
+        padding: 20px;
+    }
+
+    /*dress code section*/
+
+    .main .dress .code {
+        padding-bottom: 0px;
+    }
+
+    /*form*/
+    .main .formToggle {
+        font-size: 27px;
+        letter-spacing: 0.8px;
+        width: 70%;
+        height: 80%;
+        border-radius: 15px;
+        top: 10%;
+        border: #081330 solid 2px;
+        z-index: 1;
+        gap: 15px;
+    }
+
+    .main .formToggle p {
+        text-wrap: wrap;
+        padding: 0px 15px;
+    }
+
+    .main .formToggle .imgDate {
+        width: 20%;
+    }
+}
+
+@media (max-width: 425px) {
+    .main .formToggle {
+        font-size: 23px;
+        letter-spacing: 0.8px;
+        width: 90%;
+        height: 80%;
+        border-radius: 15px;
+        top: 10%;
+        border: hsl(224, 71%, 11%) solid 2px;
+        z-index: 1;
+        gap: 15px;
+    }
+
+    .main .formToggle p {
+        text-wrap: wrap;
+        padding: 1px 15px;
+    }
+
+    .main .formToggle .oneInvition div h4 {
+
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 376px) {
+    .main .formToggle .oneInvition div {
+        gap: 14px !important;
+        padding: 0px;
+    }
+
+    .main .formToggle .oneInvition div h4 {
+
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 360px) {
+    .main {
+        height: 150vh;
+        gap: 4px !important;
+        justify-content: space-between;
+    }
+
+    .main .formToggle {
+        height: 85%;
+        top: 10%;
+        gap: 15px;
+    }
+
+    .main .formToggle p {
+        text-wrap: wrap;
+        padding: 0px 15px;
+    }
+
+    .main .formToggle>div {
+        font-size: 10px;
+        margin: 5px 0px 5px 0px;
+    }
+
+    .main .formToggle>div h4 {
+        font-size: 18px;
+    }
+
+    .main .formToggle div .boxToggle {
+        min-width: 60px;
+        height: 34px;
+        margin: 10px;
+    }
+
+    .main .formToggle .oneInvition div {
+        width: 70%;
+        padding: 0px;
+        text-wrap: nowrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .main .formToggle .oneInvition div h4 {
+        font-size: 13px;
+    }
+
+    /*boxDate*/
+    .main .date .boxDate {
+        gap: 5px;
+        padding-right: 15px;
+    }
+
+    .main .date h5 {
+        padding-right: 70px;
+    }
+
+    .main .title2 {
+        padding-bottom: 10px;
+    }
+
+    /*dress code section*/
+    .main .dress h2 {
+        gap: 15px;
+        padding-bottom: 10px;
+    }
+
+    .main .dress .code {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .main .dress .code .men {
+        padding-right: 0px;
+        align-self: center;
+        max-width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main .dress .code .men h3 {
+        padding-left: 0;
+        font-size: 23px;
+    }
+
+    .main .dress .code .men h4 {
+        padding-left: 0;
+    }
+
+    .main .dress .code .men p {
+        padding-left: 0;
+        font-size: 15px;
+    }
+
+    .main .dress .code .women {
+        padding-right: 0px;
+        max-width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media(max-width: 320px) {
+    .main .formToggle label {
+        font-size: 18px;
+    }
+
+    .main .formToggle p {
+        font-size: 15px;
+    }
+
+    .main {
+        height: fit-content;
+    }
+
+    /*
+    .main {
+        height: 100vh;
+        gap: 1px !important;
+    }
+
+    .main .title {
+        font-size: 20px;
+    }
+
+    .main .date .boxDate h3 , h3 , h5{
+        font-size: 20px;
+    }
+
+    .main .date .boxDate h2{
+        font-size: 20px;
+    }
+    */
+}
+
+@media(max-height: 700px) {
+    .main .formToggle {
+        height: 95%;
+        gap: 1px;
+    }
+}

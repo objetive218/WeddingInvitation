@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: local('Montserrat-Medium'), url(/fonts/Montserrat-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: local('Montserrat-Regular'), url(/fonts/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-LightItalic';
+  src: local('Montserrat-LightItalic'), url(/fonts/Montserrat-LightItalic.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'BODAR';
+  src: local('BODAR'), url(/fonts/BODAR.ttf) format('truetype');
+}
+
+:root {
+  text-align: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+img {
+  width: 100px;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  display: flex;
+  place-items: center;
+  background: center/cover no-repeat url(/img/Fondo_invitacion.jpg);
+  color: #081330;
+  overflow-x: hidden;
+  transition: background-image 0.2s ease-in-out;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+button:hover {
+  border-color: #646cff;
+}
+
+.slick-prev,
+.slick-next {
+  color: white !important;
+  background:#081330 !important;
+  border-radius: 50% !important;
+  border: #081330 solid 1px;
+}
+
+
+@media (max-width: 1024px) {
+  body {
+    background: center/cover no-repeat url(/img/Fondo_invitacion.jpg);
+
+  }
+}
+@media (max-width: 667px){
+  .slick-prev,
+    .slick-next {
+      color: transparent !important;
+      background: transparent !important;
+      border: none;
+      width: 0 !important;
+      height: 0 !important;
+      display: none !important;
+    }
+}
