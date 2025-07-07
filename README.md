@@ -49,4 +49,4 @@ The **Wedding Invitation Project** is a web-based application designed to create
 
 ## Example
 
-You can access it through this link with the code "1234":
+You can access it through this link with the code "1234": https://weddinginvitationexample.netlify.app

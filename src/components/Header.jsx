@@ -25,7 +25,7 @@ const Header = () => {
                 </svg>
             </div>
             <img src="img/CYM_animado.gif" alt="animate logo" />
-            <h2 className={HeaderStyle.names}>Alejandro & Camila</h2>
+            <h2 className={HeaderStyle.names}>Carlos & Maria</h2>
             {confirmation && <MusicPlay />}
         </header>
     );
