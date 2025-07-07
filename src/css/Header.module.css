@@ -50,57 +50,73 @@
 .view {
     display: none !important;
 }
-.active{
-   display: none !important;
-   opacity: 0 !important;   
+
+.active {
+    display: none !important;
+    opacity: 0 !important;
 }
+
 .box .pic {
     width: 100vw;
     height: 100vh;
-    padding: 50px;
+    /* padding: 50px; */
     border-radius: 1%;
     /* position: relative; */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0px;
-    aspect-ratio: 16/9;
-    
+    /* aspect-ratio: 16/9; */
+
 }
 
 .box .pic .port {
     width: 100%;
     height: 100%;
-    border-radius: 5%;
+    border-radius: 4%;
     object-fit: cover;
-    
+    /* Vuelve a cover */
+    object-position: center 18%;
     mask-image: linear-gradient(black 85%, transparent);
+    box-shadow:
+        inset 0 0 50px rgba(0, 0, 0, 0.3),
+        /* Difuminado suave */
+        inset 0 0 100px rgba(0, 0, 0, 0.2),
+        /* Difuminado medio */
+        inset 0 0 150px rgba(0, 0, 0, 0.1);
+}
 
-}
-.box{
+.box {
     background: center/ cover no-repeat url(/img/Invitacion_deskop.jpg);
+    background-position: center 40%;
+    /* Ajusta la posición */
     mask-image: linear-gradient(black 85%, transparent);
+    width: 100vw;
+    height: 100vh;
 }
+
 @media (max-width: 1024px) {
     .names {
         font-size: 50px;
         padding-bottom: 0px;
     }
 
-   .box {
-       background: center/ cover no-repeat url(/img/Fondo_invitacion.jpg);
-   }
+    .box {
+        background: center/ cover no-repeat url(/img/Fondo_invitacion.jpg);
+    }
 }
+
 @media (max-width: 425px) {
     .names {
         font-size: 50px;
         padding-bottom: 0px;
     }
 
-   
+
 }
+
 @media (max-width: 330px) {
-.box .pic .port {
+    .box .pic .port {
         width: 95%;
     }
 

@@ -38,11 +38,13 @@
 .us h2 span {
     font-size: 15px;
 }
-.us .containerCrousel{
+
+.us .containerCrousel {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 /*carousel*/
 .us .carousel {
     width: 100vh;
@@ -72,14 +74,19 @@
 }
 
 .us .carousel div>div .type {
-    width: 45%;
-    height: 90%;
+    max-width: 25%;
+    height: 80%;
     z-index: 100;
     opacity: 1;
     object-fit: contain;
-
+    border-radius: 15px;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+    box-shadow:
+        inset 0 0 30px rgba(0, 0, 0, 0.2),
+        0 0 25px rgba(0, 0, 0, 0.3);
 }
-.us .ideas{
+
+.us .ideas {
     display: flex;
     flex-direction: column;
     align-items: center;
