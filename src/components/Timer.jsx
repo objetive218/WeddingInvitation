@@ -4,7 +4,7 @@ import { useContext } from "react";
 import LoginContext from "../contexts/LoginContext";
 
 const Timer = () => {
-    const [days, hours, minutes] = useCountdown("sep 21, 2025 00:00:00")
+    const [days, hours, minutes] = useCountdown("sep 21, 2027 00:00:00")
     const { blur } = useContext(LoginContext);
     return (
         <article className={`${TimerStyle.timerBox} ${blur ? "" : TimerStyle.active_blur}`}>
